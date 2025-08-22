@@ -1,0 +1,33 @@
+{%extends "base.html"%}
+
+
+{% block body%}
+
+<div class="container">
+    <h1>Welcome to PartyPlotter</h1>
+    <form id="auth-form" action="{{ url_for('login') }}" method="post">
+        <input type="text" name="username" placeholder="Username" class="input-field"/>
+        <input type="password" name="password" placeholder="Password" class="input-field"/>
+        <input type="submit" value="Login" class="btn btn-login" onclick="setActionForm('login')"/>
+        
+    </form>
+    <a href="{{url_for('show_signup')}}" class="btn btn-logout">Register</a>
+</div>
+
+<script>
+    function setActionForm(action) {
+        let form = document.getElementById('auth-form');
+        if (action === 'login') {
+            form.action = "{{url_for('login')}}";
+            form.method = "post";
+            form.submit();
+        }
+        else if (action === 'register') {
+            form.action = "{{url_for('register')}}";
+            form.method = "post";
+            form.submit();
+        }
+    }
+</script>
+
+{% endblock %}

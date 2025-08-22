@@ -1,0 +1,15 @@
+{%extends "base.html"%}
+
+
+{% block body%}
+<div class="container">
+    <h1>Welcome to PartyPlotter</h1>
+    <form id="auth-form" action="{{url_for('register')}}" method="post">
+        <input type="text" name="newusername" placeholder="Username" class="input-field"/>
+        <input type="password" name="newpassword" placeholder="Password" class="input-field"/>
+        <input type="text" name="newemail" placeholder="Email" class="input-field"/>
+        <input type="date" name="newbirthday" placeholder="Birthday" class="input-field"/>
+        <input type="submit" value="Register" class="btn btn-login"/>
+    </form>
+</div>
+{% endblock %}
