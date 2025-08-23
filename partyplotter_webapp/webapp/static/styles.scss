@@ -1,0 +1,112 @@
+//variables
+$bgcolour: #e1ffbe;
+$primary: #c3dda5;
+$primary-hover: darken($primary, 10%);
+$container-bgcolour: #ffffff ;
+$textcolour: #000000;
+$subtextcolour: #5c5c5c;
+$headercolour: #749275;
+
+
+//global styles
+body {
+    background-color: $bgcolour;
+    color: $textcolour;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+header{
+    width: 100%;
+    background-color: $headercolour;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    color: white;
+
+    h1{
+        margin: 0;
+        font-size: 2.5rem;
+        color: $textcolour;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+}
+
+.container {
+    background-color: $container-bgcolour;
+    border-radius: 0 4px 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    margin: 50px auto;
+    align-items: center;
+
+
+    h1 {
+        font-size: 2.5rem;
+        color: $textcolour;
+        margin-bottom: 1.5rem;
+    }
+    p {
+        font-size: 18px;
+        color: $subtextcolour;
+        margin-bottom: 20px;
+    }
+    .input-field {
+        width: 90%;
+        padding: 7px;
+        margin: 10px 0;
+        border: 1px solid #84946c;;
+        border-radius: 8px;
+        font-size: 1.5rem;
+        box-sizing: border-box;
+
+        &:focus {
+            border-color: blue;
+            outline: none;
+        }
+    }
+
+    .btn {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        border: 1px solid #84946c;
+        border-radius: 8px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        align-items: center;
+
+        &.btn-login {
+            background-color: $primary;
+            color: white;
+
+            &:hover {
+                background-color: $primary-hover;
+            }
+        }
+
+        &.btn-logout {
+            background-color: $primary;
+            color: white;
+
+            &:hover {
+                background-color: $primary-hover;
+        }
+    }
+}
+}

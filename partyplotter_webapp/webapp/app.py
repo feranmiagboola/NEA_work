@@ -20,7 +20,7 @@ class User(db.Model):
     username = db.Column(db.String(25), unique=True, nullable=False)
     password_hash = db.Column(db.String(150), nullable=False)
     email = db.Column(db.String(330), nullable=True)
-    birthday = db.Column(db.Date, nullable=True)
+    birthday = db.Column(db.Date, nullable=False)
     dateJoined = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
 
     def setPassword(self, password):
@@ -91,10 +91,19 @@ def register():
     
 
 #Dashboard route
+@app.route("/dashboard")
+def dashboard():
+    if "username" in session:
+        return render_template("dashboard.html",username=session["username"])
+    return redirect(url_for("home"))
+
 
 
 #Logout route
-
+@app.route("/logout")
+def logout():
+    session.pop('username', None)
+    return redirect(url_for("home"))
 
 
 
