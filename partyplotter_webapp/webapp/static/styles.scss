@@ -2,6 +2,8 @@
 $bgcolour: #e1ffbe;
 $primary: #c3dda5;
 $primary-hover: darken($primary, 10%);
+$secondary: #aec693;
+$secondary-hover: darken($secondary, 10%);
 $container-bgcolour: #ffffff ;
 $textcolour: #000000;
 $subtextcolour: #5c5c5c;
@@ -80,7 +82,7 @@ main {
     }
 
     .btn {
-        width: 100%;
+        width: 90%;
         padding: 5px;
         margin-bottom: 10px;
         margin-top: 10px;
