@@ -1,7 +1,7 @@
 body {
   background-color: #e1ffbe;
   color: #000000;
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: "Times New Roman", "Georgia", serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,8 +13,8 @@ body {
 header {
   width: 100%;
   background-color: #749275;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
   color: white;
 }
 header h1 {
@@ -31,14 +31,22 @@ main {
   width: 100%;
 }
 
+.calendar {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  margin: 10px auto;
+}
+
 .container {
   background-color: #ffffff;
-  border-radius: 0 4px 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  max-width: 400px;
-  width: 100%;
-  margin: 50px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.253);
+  padding: 1%;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  margin: 1% auto;
   align-items: center;
 }
 .container h1 {
