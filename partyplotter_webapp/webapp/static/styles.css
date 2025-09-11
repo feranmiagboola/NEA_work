@@ -1,7 +1,7 @@
 body {
-  background-color: #e1ffbe;
+  background-color: #e1ffbe !important;
   color: #000000;
-  font-family: "Times New Roman", "Georgia", serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Medium, sans-serif !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,11 +31,26 @@ main {
   width: 100%;
 }
 
-.calendar {
+#calendar {
   height: 100%;
   width: 100%;
+  color: #99b47a;
+}
+
+.dashboard-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.253);
+  padding: 1%;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  margin: 1% auto;
   align-items: center;
-  margin: 10px auto;
+}
+.dashboard-container .container {
+  width: 400px;
+  height: 300px;
 }
 
 .container {
@@ -44,7 +59,7 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.253);
   padding: 1%;
   width: 90%;
-  height: 80%;
+  height: 100%;
   display: flex;
   margin: 1% auto;
   align-items: center;
@@ -96,5 +111,12 @@ main {
   color: white;
 }
 .container .btn.btn-logout:hover {
+  background-color: rgb(170.3225806452, 207.0161290323, 127.9838709677);
+}
+.container .btn.btn-calendar {
+  background-color: #c3dda5;
+  color: white;
+}
+.container .btn.btn-calendar:hover {
   background-color: rgb(170.3225806452, 207.0161290323, 127.9838709677);
 }/*# sourceMappingURL=styles.css.map */

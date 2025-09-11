@@ -110,7 +110,7 @@ def logout():
 #Calendar route
 @app.route('/calendar')
 def calendar():
-    return render_template('cal.html')
+    return render_template('calendar.html')
 
 
 

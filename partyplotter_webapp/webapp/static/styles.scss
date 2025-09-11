@@ -12,9 +12,9 @@ $headercolour: #749275;
 
 //global styles
 body {
-    background-color: $bgcolour;
+    background-color: $bgcolour !important;
     color: $textcolour;
-    font-family: 'Times New Roman', 'Georgia', serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Medium, sans-serif !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,11 +45,29 @@ main {
     width: 100%;
 }
 
-.calendar {
+
+#calendar {
     height: 100%;
     width: 100%;
+    color: #99b47a;
+}
+
+
+.dashboard-container{
+    background-color: $container-bgcolour;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.253);
+    padding: 1%;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    margin: 1% auto;
     align-items: center;
-    margin: 10px auto;
+    
+    .container{
+        width: 400px;
+        height: 300px;
+    }
 }
 
 .container {
@@ -58,7 +76,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.253);
     padding: 1%;
     width: 90%;
-    height: 80%;
+    height: 100%;
     display: flex;
     margin: 1% auto;
     align-items: center;
@@ -117,6 +135,16 @@ main {
             &:hover {
                 background-color: $primary-hover;
             }
+        }
+
+        &.btn-calendar {
+            background-color: $primary;
+            color: white;
+
+            &:hover {
+                background-color: $primary-hover;
+            }
+        
         }
     }
 }
