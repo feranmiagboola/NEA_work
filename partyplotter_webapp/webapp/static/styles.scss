@@ -17,10 +17,10 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Medium, sans-serif !important;
     display: flex;
     flex-direction: column;
-    align-items: center;
     height: 100vh;
     margin: 0;
     text-align: center;
+    margin: auto;
 }
 
 header{
@@ -56,18 +56,38 @@ main {
 .dashboard-container{
     background-color: $container-bgcolour;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.253);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
     padding: 1%;
     width: 90%;
     height: 90%;
     display: flex;
-    margin: 1% auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
+
     
     .container{
         width: 400px;
         height: 300px;
+        align-items: center;
     }
+
+    .dashboard{
+        width: 400px;
+        height: 300px;
+        margin: auto;
+        background-color: $container-bgcolour;
+        box-shadow: rgba(0, 0, 0, 0.25);
+    }
+
+    .dashboard-content{
+        width: 400px;
+        height: 300px;
+        margin: auto;
+    }
+
 }
 
 .container {
