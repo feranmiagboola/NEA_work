@@ -6,7 +6,7 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  text-align: center;
+  text-align: center !important;
   margin: auto;
 }
 
@@ -38,9 +38,7 @@ main {
 }
 
 .dashboard-container {
-  background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
   padding: 1%;
   width: 90%;
   height: 90%;
@@ -62,6 +60,7 @@ main {
   margin: auto;
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
 }
 .dashboard-container .dashboard-content {
   width: 400px;
@@ -70,9 +69,9 @@ main {
 }
 
 .container {
-  background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.253);
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.25);
   padding: 1%;
   width: 90%;
   height: 100%;
